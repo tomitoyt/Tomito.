@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomito - Réseaux Sociaux</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background-image: url('tomito.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: scroll; /* Pas fixed pour mobile */
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* couche sombre pour lisibilité */
+      backdrop-filter: blur(3px);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons h2 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    .icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-list a {
+      font-size: 40px;
+      color: white;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .icon-list a:hover {
+      color: #00bfff;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-attachment: scroll !important;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      .icon-list {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .icon-list a {
+        font-size: 50px;
+      }
+      .content {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Bienvenue chez Tomito</h1>
+
+    <div class="social-icons">
+      <h2>Mes Réseaux Sociaux</h2>
+      <div class="icon-list">
+        <a href="https://x.com/Tomito1497?t=Zaeo1JxoaTbNLtcyh5rqrQ&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@Tomito_yt" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@tomito2.00?_t=ZN-8x11hhgqDGY&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://discord.gg/dXMAH7kv8f" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
